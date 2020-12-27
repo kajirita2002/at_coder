@@ -6,9 +6,7 @@ def dfs(i, f, sum):
     else:
         dfs(i + 1, f + "+" + s[i + 1], sum + int(s[i + 1]))
         dfs(i + 1, f + "-" + s[i + 1], sum - int(s[i + 1]))
-
 s = input()
-
 dfs(0, s[0], int(s[0]))
 
 # --------------------------------------------
